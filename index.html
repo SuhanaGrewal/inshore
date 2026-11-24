@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inshore – Suhana Grewal</title>
+<style>
+/* Layout: the deck's slides, unchanged, stacked one per row on a neutral ground. Single deliberate look. */
+:root{ --bg:#e6e6e1; --frame:#d2d3cc; color-scheme:light }
+body{background:var(--bg);margin:0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.deck{max-width:1200px;margin:0 auto;padding-block:24px 40px;display:flex;flex-direction:column;gap:20px}
+.deck img{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;border:1px solid var(--frame);background:#fff}
+</style>
+</head><body>
+<main class="deck">
+  <img src="slides/slide-01.jpg" alt="Slide 1: hedge. How accurately do your agents read a submission? Evaluating insurance agent performance, Suhana Grewal at UChicago.">
+  <img src="slides/slide-02.jpg" alt="Slide 2: the process. Hedge's agent turns each submission into facts that decide which carriers see it and at what price.">
+  <img src="slides/slide-03.jpg" alt="Slide 3: the problem. The broker's form says the claim is closed, the loss run says it is open; a good reader counts paid plus reserve, $52,471.83, and flags the conflict.">
+  <img src="slides/slide-04.jpg" alt="Slide 4: the gap. You can't tell if a change made the agent better or worse without a test set with known answers.">
+  <img src="slides/slide-05.jpg" alt="Slide 5: 66 test files. Answers written first, each file follows Hedge's intake, every file hides a mistake, 40 files for tuning and 26 held back for scoring.">
+  <img src="slides/slide-06.jpg" alt="Slide 6: how an answer is graded. Test file 044: the agent left out $10,717 in legal fees from total incurred.">
+  <img src="slides/slide-07.jpg" alt="Slide 7: 3 scoring rules. Critical fields weighted 5x, made-up values tracked separately, and the grader is tested before it is trusted.">
+</main>
+</body></html>
